@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahab Construction LLP | Built on Precision. Driven by Execution.</title>
+    <meta name="description" content="Dahab Construction LLP - DPIIT-Registered MSME | Hospet, Karnataka | Railway-Grade Civil Execution">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-navy: #0A1628;
+            --accent-yellow: #F5A623;
+            --light-grey: #F4F4F4;
+            --white: #FFFFFF;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --font-headings: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-headings);
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            font-family: var(--font-headings);
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-yellow);
+            color: var(--primary-navy);
+            border: 2px solid var(--accent-yellow);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--accent-yellow);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--primary-navy);
+        }
+
+        /* Typography & Layout Utility Classes */
+        section {
+            padding: 6rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-yellow);
+        }
+
+        .section-title.center {
+            text-align: center;
+        }
+
+        .section-title.center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+
+        .text-center {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Navbar --- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 0;
+            background-color: transparent;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+        }
+
+        .navbar.sticky {
+            background-color: var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+        }
+
+        .navbar.sticky .nav-links a {
+            color: var(--primary-navy);
+        }
+
+        .navbar.sticky .logo-text {
+            color: var(--primary-navy);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            height: 48px;
+            width: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .logo-text {
+            font-family: var(--font-headings);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: -0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-family: var(--font-headings);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--white);
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--accent-yellow);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+
+        .navbar.sticky .hamburger {
+            color: var(--primary-navy);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?railway,bridge,construction') no-repeat center center/cover;
+            color: var(--white);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10, 22, 40, 0.9) 0%, rgba(10, 22, 40, 0.7) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 2.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Stats Counter absolute on desktop to span width */
+        .hero-stats {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--primary-navy);
+            z-index: 2;
+            padding: 2rem 0;
+            border-top: 4px solid var(--accent-yellow);
+        }
+
+        .hero-stats .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--accent-yellow);
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stat-item h3 span.suffix {
+            font-size: 2.5rem;
+        }
+
+        .stat-item p {
+            font-family: var(--font-headings);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- About Us Section --- */
+        .about {
+            background-color: var(--white);
+        }
+
+        .about-overview {
+            margin-bottom: 4rem;
+        }
+
+        .about-overview p {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .partner-card {
+            background-color: var(--light-grey);
+            padding: 2.5rem;
+            border-radius: 8px;
+            transition: var(--transition-smooth);
+            border-bottom: 4px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--accent-yellow);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .partner-icon {
+            font-size: 2.5rem;
+            color: var(--accent-yellow);
+            margin-bottom: 1.5rem;
+        }
+
+        .partner-name {
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .partner-title {
+            font-family: var(--font-headings);
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .partner-desc {
+            color: var(--text-light);
+            font-size: 1rem;
+            flex-grow: 1;
+        }
+        
+        .partner-bg {
+            font-weight: 600;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .about-story {
+            background-color: var(--primary-navy);
+            color: var(--white);
+            padding: 3rem;
+            border-radius: 8px;
+            border-left: 6px solid var(--accent-yellow);
+        }
+
+        .about-story h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-story p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        /* --- Services Section --- */
+        .services {
+            background-color: var(--light-grey);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 8px;
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--primary-navy);
+            z-index: -1;
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transform: scaleY(0);
+            transform-origin: bottom;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover .service-icon,
+        .service-card:hover .service-title,
+        .service-card:hover p {
+            color: var(--white);
+        }
+
+        /* --- Featured Project Section --- */
+        .project {
+            background: url('https://source.unsplash.com/1600x900/?railway,steel,architecture') no-repeat center center/cover;
+            position: relative;
+            color: var(--white);
+            padding: 8rem 0;
+        }
+
+        .project::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 22, 40, 0.95);
+            z-index: 1;
+        }
+
+        .project .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .project-badge {
+            display: inline-block;
+            background-color: var(--accent-yellow);
+            color: var(--primary-navy);
+            font-family: var(--font-headings);
+            font-size: 0.875rem;
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-yellow);
+            margin-bottom: 3rem;
+            font-family: var(--font-headings);
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .project-details {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .detail-row {
+            display: flex;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .detail-row:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .detail-label {
+            font-family: var(--font-headings);
+            font-weight: 700;
+            width: 150px;
+            color: var(--accent-yellow);
+        }
+
+        .detail-value {
+            flex: 1;
+        }
+
+        .project-desc {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        /* --- Why Choose Us Section --- */
+        .why-us {
+            background-color: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .why-box {
+            padding: 2.5rem 2rem;
+            border: 1px solid #E5E5E5;
+            border-radius: 8px;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .why-box:hover {
+            border-color: var(--primary-navy);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transform: translateY(-5px);
+        }
+
+        .why-icon {
+            width: 64px;
+            height: 64px;
+            background-color: var(--light-grey);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            transition: var(--transition-smooth);
+        }
+
+        .why-box:hover .why-icon {
+            background-color: var(--primary-navy);
+            color: var(--accent-yellow);
+        }
+
+        .why-title {
+            font-size: 1.25rem;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+        }
+
+        .why-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* --- Credentials Section --- */
+        .credentials {
+            background-color: var(--primary-navy);
+            padding: 4rem 0;
+        }
+
+        .credentials-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .chip {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-family: var(--font-headings);
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition-smooth);
+        }
+
+        .chip:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: var(--accent-yellow);
+        }
+
+        .chip i {
+            color: #4CAF50; /* Green checkmark */
+            font-size: 1.1rem;
+        }
+
+        /* --- Contact Section --- */
+        .contact {
+            background-color: var(--light-grey);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 4rem;
+        }
+
+        .contact-form {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-family: var(--font-headings);
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--primary-navy);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--text-dark);
+            transition: var(--transition-smooth);
+            background-color: #FAFAFA;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-navy);
+            background-color: var(--white);
+            box-shadow: 0 0 0 3px rgba(10, 22, 40, 0.1);
+        }
+
+        select.form-control {
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%230A1628%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat, repeat;
+            background-position: right .7em top 50%, 0 0;
+            background-size: .65em auto, 100%;
+        }
+
+        .contact-btn {
+            width: 100%;
+            border: none;
+            padding: 1rem;
+            font-size: 1.125rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-block {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .info-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--primary-navy);
+            color: var(--accent-yellow);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .info-text h4 {
+            font-size: 1.125rem;
+            color: var(--primary-navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .info-text p {
+            color: var(--text-light);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 250px;
+            background-color: #E5E5E5;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: auto;
+        }
+
+        .form-success-message {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-weight: 500;
+            border: 1px solid #c3e6cb;
+            text-align: center;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: var(--primary-navy);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+            border-top: 4px solid var(--accent-yellow);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-logo {
+            font-family: var(--font-headings);
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1rem;
+        }
+
+        .footer-heading {
+            font-family: var(--font-headings);
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--accent-yellow);
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.875rem;
+        }
+
+        /* --- Animations --- */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+
+        .fade-in.is-visible {
+            opacity: 1;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            .hero-stats .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .project-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-brand {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 250px;
+                background-color: var(--primary-navy);
+                flex-direction: column;
+                padding: 6rem 2rem 2rem;
+                transition: var(--transition-smooth);
+                box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .hamburger {
+                display: block;
+                z-index: 1001;
+            }
+
+            .hamburger.active {
+                color: var(--accent-yellow);
+            }
+
+            .hero {
+                padding-top: 80px;
+            }
+            
+            .hero-stats {
+                position: relative;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .partners-grid, .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-brand {
+                grid-column: span 1;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo-container">
+                <!-- Fallback to text if image unavailable, using image from Assets if present -->
+                <img src="./Assets/logo.jpeg" alt="DC Logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="logo-text">Dahab Construction</span>
+            </a>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Building Infrastructure That Moves India</h1>
+                <p class="hero-subtitle">Dahab Construction LLP — DPIIT-Registered MSME | Hospet, Karnataka | Railway-Grade Civil Execution</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Our Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="container">
+                <div class="stat-item animate-on-scroll">
+                    <h3><span>₹</span><span class="counter" data-target="3.83">0</span><span class="suffix">Cr+</span></h3>
+                    <p>Active Project Value</p>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <h3><span class="counter" data-target="2">0</span><span class="suffix">+</span></h3>
+                    <p>Railway Structures Execution</p>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <h3><span class="counter" data-target="4">0</span></h3>
+                    <p>Core Service Verticals</p>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <h3><i class="fas fa-certificate"></i></h3>
+                    <p>DPIIT Registered MSME</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-overview animate-on-scroll">
+                <h2 class="section-title">Who We Are</h2>
+                <div class="row">
+                    <p><strong>Dahab Construction LLP</strong> is a DPIIT-registered MSME construction firm headquartered in Hospet, Karnataka. Founded with a commitment to precision, safety, and timely delivery, we operate at the intersection of Railway infrastructure and private industrial construction.</p>
+                    <p>From Foot Over Bridges on live Railway corridors to industrial warehouses and earthwork for private developers — we execute with Railway-grade discipline in every project we take on.</p>
+                    <p>Our work is concentrated in the Hospet-Bellary-Gadag construction belt, one of Karnataka's most active infrastructure and industrial zones. We are positioned as a full-scope civil contractor capable of handling earthwork, structural construction, road works, and Pre-Engineered Building (PEB) erection under one roof.</p>
+                </div>
+            </div>
+
+            <h3 class="section-subtitle animate-on-scroll" style="margin-bottom: 2rem; color: var(--primary-navy); font-family: var(--font-headings); font-weight: 700;">Our Core Leadership</h3>
+            
+            <div class="partners-grid">
+                <div class="partner-card animate-on-scroll">
+                    <i class="fas fa-hard-hat partner-icon"></i>
+                    <h3 class="partner-name">Mohammed Ryhan</h3>
+                    <p class="partner-title">Designated Partner</p>
+                    <span class="partner-bg"><i class="fas fa-graduation-cap"></i> Bachelor of Commerce | Site Operations & Supervision</span>
+                    <p class="partner-desc">Mohammed Ryhan brings sharp commercial acumen and hands-on site supervision capabilities to every project. With a strong grip on procurement, vendor coordination, and on-ground execution management, he ensures that project timelines, material flow, and labour productivity stay on track. His presence on-site is the operational backbone of Dahab Construction's delivery capability.</p>
+                </div>
+
+                <div class="partner-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <i class="fas fa-drafting-compass partner-icon"></i>
+                    <h3 class="partner-name">Abubacker Siddique</h3>
+                    <p class="partner-title">Managing Partner</p>
+                    <span class="partner-bg"><i class="fas fa-hard-hat"></i> Civil Engineering | Execution Strategy & Project Planning</span>
+                    <p class="partner-desc">Abubacker Siddique leads Dahab Construction's technical direction and project execution strategy. With a foundation in Civil Engineering and deep domain knowledge across Railway infrastructure, industrial construction, and real estate development, he architects the end-to-end execution approach for every project — from tendering and planning to structural delivery and handover.</p>
+                </div>
+            </div>
+
+            <div class="about-story animate-on-scroll">
+                <h3>Our Story</h3>
+                <p>Rooted in Hospet and built on the discipline of Railway contracting, Dahab Construction was established to bring structured, accountable, and high-quality civil execution to both public infrastructure and private development projects. What began as a focused Railway subcontracting operation has grown into a full-service civil construction firm targeting industrial, commercial, and real estate sectors across northern Karnataka.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title center animate-on-scroll">Our Core Expertise</h2>
+            <p class="section-subtitle text-center animate-on-scroll">Delivering comprehensive civil engineering solutions across diverse infrastructure sectors.</p>
+
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-industry service-icon"></i>
+                    <h3 class="service-title">PEB Structures</h3>
+                    <p>Design-coordinated erection of Pre-Engineered Buildings for industrial, warehousing, and logistics applications. Fast construction, high structural integrity, cost-efficient.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <i class="fas fa-warehouse service-icon"></i>
+                    <h3 class="service-title">Industrial Warehouses & Sheds</h3>
+                    <p>RCC and conventional construction of factory sheds, storage units, and industrial buildings. Tailored to client specifications with full civil scope delivery.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <i class="fas fa-road service-icon"></i>
+                    <h3 class="service-title">Road Works</h3>
+                    <p>Private and industrial internal road construction including haul roads, yard roads, stormwater drainage, and annual maintenance contracts for industrial estates and mining zones.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.3s;">
+                    <i class="fas fa-truck-moving service-icon"></i>
+                    <h3 class="service-title">Earthwork & Excavation</h3>
+                    <p>Bulk earthwork, site grading, formation filling, and excavation services. In-house machinery capability for faster mobilization and cost control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section class="project" id="projects">
+        <div class="container">
+            <div class="project-info animate-on-scroll">
+                <span class="project-badge">ONGOING PROJECT</span>
+                <h2 class="project-title">Foot Over Bridge Construction</h2>
+                <h3 class="project-subtitle">South Western Railway | Hubballi Division</h3>
+            </div>
+
+            <div class="project-content">
+                <div class="project-details animate-on-scroll">
+                    <div class="detail-row">
+                        <div class="detail-label">Role</div>
+                        <div class="detail-value">Civil Subcontractor</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Project Value</div>
+                        <div class="detail-value">₹3.83 Crore</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Structure Type</div>
+                        <div class="detail-value">3-metre Wide Foot Over Bridge (FOB)</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Locations</div>
+                        <div class="detail-value">Halligudi Yard (SW-I) & Hitnal Yard (SW-II)</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Section</div>
+                        <div class="detail-value">GDG–HPT Corridor</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Division</div>
+                        <div class="detail-value">Hubballi, South Western Railway</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Status</div>
+                        <div class="detail-value" style="color: var(--accent-yellow); font-weight: 600;">Under Execution</div>
+                    </div>
+                </div>
+
+                <div class="project-desc animate-on-scroll" style="transition-delay: 0.2s;">
+                    <p>Dahab Construction is currently executing construction of two 3-metre wide Foot Over Bridges for two-track crossing at Halligudi and Hitnal yards on the Gadag–Hospet rail corridor, under the Hubballi Division of South Western Railway.</p>
+                    <br>
+                    <p>This project is being executed as a civil subcontractor and reflects our capability to deliver Railway-grade structural works within live rail environments, with strict adherence to safety protocols, Railway specifications, and schedule compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title center animate-on-scroll">The Dahab Edge</h2>
+            <p class="section-subtitle text-center animate-on-scroll">Why clients trust us with their critical infrastructure and civil developments.</p>
+
+            <div class="why-grid">
+                <div class="why-box animate-on-scroll">
+                    <div class="why-icon"><i class="fas fa-train"></i></div>
+                    <h3 class="why-title">Railway-Grade Discipline</h3>
+                    <p class="why-desc">Every project delivered with the precision and compliance standards demanded by Railway infrastructure work.</p>
+                </div>
+
+                <div class="why-box animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="why-icon"><i class="fas fa-building"></i></div>
+                    <h3 class="why-title">End-to-End Capability</h3>
+                    <p class="why-desc">Earthwork to structural finish, we handle the full project scope without fragmented subcontracting.</p>
+                </div>
+
+                <div class="why-box animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="why-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3 class="why-title">Local Belt Expertise</h3>
+                    <p class="why-desc">Deep knowledge of Hospet-Bellary-Gadag construction environment, material supply chains, and labour.</p>
+                </div>
+
+                <div class="why-box animate-on-scroll" style="transition-delay: 0.3s;">
+                    <div class="why-icon"><i class="fas fa-stamp"></i></div>
+                    <h3 class="why-title">MSME Registered</h3>
+                    <p class="why-desc">DPIIT-registered MSME LLP, eligible for government scheme benefits and formally structured for institutional clients.</p>
+                </div>
+
+                <div class="why-box animate-on-scroll" style="transition-delay: 0.4s;">
+                    <div class="why-icon"><i class="fas fa-clock"></i></div>
+                    <h3 class="why-title">On-Time Delivery Focus</h3>
+                    <p class="why-desc">Structured project planning with milestone-based execution to ensure timely handover.</p>
+                </div>
+
+                <div class="why-box animate-on-scroll" style="transition-delay: 0.5s;">
+                    <div class="why-icon"><i class="fas fa-comments"></i></div>
+                    <h3 class="why-title">Transparent Communication</h3>
+                    <p class="why-desc">Clients receive regular progress updates, documentation, and clear scope accountability throughout execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section class="credentials">
+        <div class="container animate-on-scroll">
+            <div class="credentials-row">
+                <div class="chip"><i class="fas fa-check-circle"></i> DPIIT Registered MSME</div>
+                <div class="chip"><i class="fas fa-check-circle"></i> LLP Registered — Ministry of Corporate Affairs</div>
+                <div class="chip"><i class="fas fa-check-circle"></i> Active Railway Infrastructure Contractor</div>
+                <div class="chip"><i class="fas fa-check-circle"></i> Karnataka-Based Operations</div>
+                <div class="chip"><i class="fas fa-check-circle"></i> GST Registered</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Let's Build Something Together</h2>
+            <p class="section-subtitle animate-on-scroll">Reach out for project inquiries, subcontracting opportunities, or partnership discussions.</p>
+
+            <div class="contact-grid">
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company Name</label>
+                                <input type="text" id="company" class="form-control" placeholder="Acme Corp">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" required placeholder="+91 XXXXX XXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">Project Type</label>
+                            <select id="projectType" class="form-control" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="PEB Structure">PEB Structure</option>
+                                <option value="Warehouse & Shed">Warehouse & Shed</option>
+                                <option value="Road Works">Road Works</option>
+                                <option value="Earthwork">Earthwork</option>
+                                <option value="Other">Other Civil Works</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details / Message</label>
+                            <textarea id="message" rows="4" class="form-control" required placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary contact-btn">Send Inquiry <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+                        
+                        <div id="formSuccess" class="form-success-message">
+                            Thank you! Your message has been sent successfully. We will get back to you shortly.
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Headquarters</h4>
+                            <p>Hospet, Bellary District<br>Karnataka, India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+91 (Contact Number Placeholder)</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>info@dahabconstruction.com</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <!-- Replace with actual Google Maps embed -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123018.78457784349!2d76.3129188049071!3d15.268571583091936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77ea107b34e1b%3A0xe54e2ee2a101f3e7!2sHosapete%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1709400000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">Dahab Construction</span>
+                    <p>"Built on Precision. Driven by Execution."</p>
+                    <p>A DPIIT-Registered MSME delivering Railway-grade civil infrastructure and private sector development.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#projects">Featured Project</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul>
+                        <li><a href="#services">PEB Structures</a></li>
+                        <li><a href="#services">Industrial Warehouses</a></li>
+                        <li><a href="#services">Road Works</a></li>
+                        <li><a href="#services">Earthwork & Excavation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Dahab Construction LLP | DPIIT Registered MSME | Hospet, Karnataka | &copy; 2026 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Navbar Sticky and Mobile Menu
+        const navbar = document.getElementById('navbar');
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const links = document.querySelectorAll('.nav-links a');
+
+        // Sticky Navbar
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+
+        // Mobile Menu Toggle
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when link clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Reveal Animations
+        const observers = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Stop observing once animated
+                    observers.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll('.animate-on-scroll, .fade-in').forEach(element => {
+            observers.observe(element);
+        });
+
+        // Animated Counters
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; // The lower the slower
+
+        const animateCounters = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target.querySelector('.counter') || entry.target;
+                    
+                    if(counter.classList.contains('counter')) {
+                        const target = +counter.getAttribute('data-target');
+                        const isDecimal = target % 1 !== 0;
+                        
+                        const updateCount = () => {
+                            const count = +counter.innerText;
+                            const inc = target / speed;
+
+                            if (count < target) {
+                                let newCount = count + inc;
+                                if(isDecimal && newCount >= target) {
+                                    counter.innerText = target.toFixed(2);
+                                } else if (isDecimal) {
+                                    counter.innerText = newCount.toFixed(2);
+                                    setTimeout(updateCount, 10);
+                                } else {
+                                    counter.innerText = Math.ceil(newCount);
+                                    setTimeout(updateCount, 10);
+                                }
+                            } else {
+                                counter.innerText = isDecimal ? target.toFixed(2) : target;
+                            }
+                        };
+                        updateCount();
+                        observer.unobserve(entry.target);
+                    }
+                }
+            });
+        };
+
+        const counterObserver = new IntersectionObserver(animateCounters, {
+            threshold: 0.5
+        });
+
+        document.querySelectorAll('.stat-item').forEach(stat => {
+            counterObserver.observe(stat);
+        });
+
+        // Form Submission Toggle
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simulate form submission
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                contactForm.reset();
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                formSuccess.style.display = 'block';
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formSuccess.style.display = 'none';
+                }, 5000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
