@@ -46,11 +46,7 @@ export default function FeaturedProject() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
               <div>
                 <dt className="text-gold-500 font-heading font-bold text-sm uppercase mb-1 tracking-wider">Role</dt>
-                <dd className="text-white font-sans text-lg font-medium">Civil Subcontractor</dd>
-              </div>
-              <div>
-                <dt className="text-gold-500 font-heading font-bold text-sm uppercase mb-1 tracking-wider">Project Value</dt>
-                <dd className="text-white font-sans text-lg font-bold">₹400 Lakhs+</dd>
+                <dd className="text-white font-sans text-lg font-medium">Civil Contractor</dd>
               </div>
               <div>
                 <dt className="text-gold-500 font-heading font-bold text-sm uppercase mb-1 tracking-wider">Structure Type</dt>
